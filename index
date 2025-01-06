@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Josef Winters | WDD 131</title>
+        <meta name="description" content="Josef Winters, introduction, programming">
+        <meta name="author" content="Josef Winters">
+    </head>
+    <body>
+        <header>
+            <nav>
+            </nav>
+        </header>
+        <main>
+            <h1>Josef Winters</h1>
+        </main>
+        <aside>
+        </aside>
+        <footer>
+        </footer>
+    </body>
+    <!-- last updated october 3rd 2024 -->
+</html>
