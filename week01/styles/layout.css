@@ -1,4 +1,57 @@
 header{
+    display: grid;
+    grid-template-rows: 2fr 3fr;
     color: white;
     background-color: rgb(54, 54, 54);
+    height: 10rem;
+}
+
+header p{
+    padding-bottom: 50px;
+    padding-left: 20px;
+}
+
+nav{
+    background-color: black;
+    color: white;
+    height: 1fr;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav a{
+    color: white;
+    margin: 0;
+    flex: 1 1 25%;
+}
+
+main{
+    background-color: lightgray;
+    height: 100%;
+    margin: 0;
+}
+
+aside{
+    background-color: white;
+}
+
+footer {
+    color: white;
+    background-color: rgb(54, 54, 54);
+    
+}
+
+footer p{
+    text-align: center
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.layout {
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
 }
