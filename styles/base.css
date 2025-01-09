@@ -11,7 +11,7 @@ header p{
     padding-left: 20px;
 }
 
-nav{
+header nav{
     background-color: black;
     color: white;
     height: 1fr;
@@ -21,15 +21,29 @@ nav{
     flex: 1 1 25%;
 }
 
-nav a{
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header nav a{
     color: white;
+}
+
+img{
+    max-height: 10rem;
+    justify-content: start;
+}
+
+nav a{
     margin: 0;
     width: 100%;
     text-align: center;
 }
 
 main{
-    background-color: lightgray;
+    background-color: white;
     height: 100%;
     margin: 0;
 }
@@ -56,4 +70,26 @@ footer p{
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
     margin: 0;
+}
+
+.card {
+    display: grid;
+    grid-column-start: 10% 90%;
+    margin: 20px 10px;
+    border: 2px solid black;
+}
+
+.card h1, .card h2 {
+    background-color: #3434ad;
+    color: white;
+    text-align: center;
+    align-content: center;
+    max-height: 5rem;
+    height: 100%;
+    margin:0;
+}
+
+.card h2 nav {
+    display: flex;
+    flex-direction: column;
 }
