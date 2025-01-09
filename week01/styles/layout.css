@@ -41,8 +41,6 @@ aside{
 footer {
     color: white;
     background-color: rgb(54, 54, 54);
-
-
 }
 
 footer p{
@@ -57,4 +55,5 @@ footer p{
 .layout {
     display: grid;
     grid-template-rows: 1fr 2fr 1fr;
+    margin: 0;
 }
