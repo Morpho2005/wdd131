@@ -1,23 +1,23 @@
+:root{
+    --header-font: "Newsreader";
+    --para-font: "Roboto Flex";
+}
+
 header{
+    font-family: "Newsreader", serif;
     display: grid;
     grid-template-rows: 2fr 3fr;
     color: white;
     background-color: rgb(54, 54, 54);
     height: 10rem;
-}
-
-header h1{
     text-align: center;
-    align-content: center;
 }
 
 header nav{
+    font-family: "Roboto Flex";
     background-color: black;
     color: white;
     height: 1fr;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     flex: 1 1 25%;
 }
 
@@ -33,7 +33,6 @@ header nav a{
 
 img{
     max-height: 10rem;
-    justify-content: start;
 }
 
 nav a{
@@ -46,6 +45,20 @@ main{
     background-color: white;
     height: 100%;
     margin: 0;
+}
+
+main p {
+    margin-left: 7px;
+    margin-right:7px;
+    margin-bottom: 0px;
+    border-bottom: 3px groove;
+}
+
+main img {
+    width: 150px;
+    height: auto;
+    padding: 2px;
+    float: right;
 }
 
 aside{
@@ -73,6 +86,7 @@ footer p{
 }
 
 .card {
+    font-family: "Newsreader", serif;
     display: grid;
     grid-column-start: 10% 90%;
     margin: 20px 10px;
@@ -89,7 +103,12 @@ footer p{
     margin:0;
 }
 
-.card h2 nav {
+.card p {
+    font-family: var(--para-font);
+}
+
+.card nav {
+    font-family: var(--para-font);
     display: flex;
     flex-direction: column;
 }
