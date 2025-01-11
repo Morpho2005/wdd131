@@ -16,7 +16,6 @@ header{
 header nav{
     font-family: "Roboto Flex";
     background-color: black;
-    color: white;
     height: 1fr;
     flex: 1 1 25%;
 }
