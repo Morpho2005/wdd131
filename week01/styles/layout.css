@@ -86,7 +86,7 @@ footer p{
 .card {
     font-family: "Newsreader", serif;
     display: grid;
-    grid-column-start: 1fr 9fr;
+    grid-template-columns: 1fr 9fr;
     margin: 20px 10px;
     border: 2px solid black;
 }
