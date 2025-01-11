@@ -16,7 +16,6 @@ header{
 header nav{
     font-family: "Roboto Flex";
     background-color: black;
-    height: 1fr;
     flex: 1 1 25%;
 }
 
@@ -87,7 +86,7 @@ footer p{
 .card {
     font-family: "Newsreader", serif;
     display: grid;
-    grid-column-start: 10% 90%;
+    grid-column-start: 1fr 9fr;
     margin: 20px 10px;
     border: 2px solid black;
 }
