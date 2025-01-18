@@ -51,15 +51,14 @@ section{
 }
 
 figure{
-    width: 100%;
+    margin: 10px;
+    max-width: 320px;
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
     justify-content: center;
 }
 
 img {
-    margin: 10px;
+    margin: 0;
 }
 
 nav {
