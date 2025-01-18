@@ -1,8 +1,3 @@
-:root{
-    --header-font: "Newsreader";
-    --para-font: "Roboto Flex";
-}
-
 header{
     font-family: "Newsreader", serif;
     display: grid;
