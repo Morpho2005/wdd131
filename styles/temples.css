@@ -1,10 +1,14 @@
+:root{
+    --header-background: rgb(54, 54, 54);
+    --header-font-color: white;
+}
+
 #menu {
     display: block;
     font-size: 2rem;
     font-weight: 700;
     text-decoration: none;
     padding: .5rem .75rem;
-    background-color: rgb(54, 54, 54);
     color: white;
 }
 
@@ -20,8 +24,8 @@ body{
 header{
     font-family: "Newsreader", serif;
     display: grid;
-    color: white;
-    background-color: rgb(54, 54, 54);
+    color: var(--header-font-color);
+    background-color: var(--header-background);
     width: 100%;
     min-height: 4rem;
 }
@@ -75,7 +79,7 @@ nav ul {
 }
 
 nav a{
-    color: white;
+    color: var(--header-font-color);
     margin: 10px 20px;
 }
 
@@ -85,8 +89,8 @@ h2{
 }
 
 footer {
-    color: white;
-    background-color: rgb(54, 54, 54);
+    color: var(--header-font-color);
+    background-color: var(--header-background);
     text-align: center;
 }
 
@@ -101,14 +105,14 @@ footer {
 }
 
 .navigation a{
-    color: white;
-    background-color: rgb(54, 54, 54);
+    color: var(--header-font-color);
+    background-color: var(--header-background);
 }
 
 .navigation a:hover {
 	text-decoration: underline double;
-    color: white;
-    background-color: rgb(54, 54, 54);
+    color: var(--header-font-color);
+    background-color: var(--header-background);
 }
 
 .show li{
