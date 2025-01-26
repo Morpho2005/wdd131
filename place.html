@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>New Mexico</title>
+        <meta name="description" content="New Mexico, country info">
+        <meta name="author" content="Josef Winters">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <h1>New Mexico</h1>
+        </header>
+        <main>
+            <div class="hero">
+                <picture>
+                    <source  media="(min-width: 800px)" srcset="images/roadrunner-large.webp">
+                    <img src="images/roadrunner.webp" alt="A roadrunner the national bird of New Mexico." width="900" height="480">
+                </picture></div>
+            <section class="card">
+                <h2>Data</h2>
+                <ul>
+                    <li>Area: 121,591 sq mi</li>
+                    <li>Population: 2,130,256</li>
+                    <li>Capital: Santa Fe</li>
+                    <li>Languages: English, Spanish</li>
+                    <li>Currency: USD</li>
+                    <li>Time Zone: UTC-7</li>
+                    <li>Calling Code: +1</li>
+                    <li>Internet TLD: .us</li>
+                </ul>
+            </section>
+            <section class="card card2">
+                <h2>Weather <img src="images/weather.png" alt=""></h2>
+                <ul>
+                    <li>Temperature: 49ºf</li>
+                    <li>Conditions: Sunny</li>
+                    <li>Wind: 9.5 mph</li>
+                    <li id="windchill"></li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <p>©<span id="year"></span>, Josef Winters, New Mexico</p>
+            <p>last updated <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html>
