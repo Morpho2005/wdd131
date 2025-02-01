@@ -55,11 +55,22 @@ section{
 }
 
 figure{
-    margin: 5px 10px;
+    width: 20rem;
+    background-color: var(--header-background);
+    color: var(--header-font-color);
+    text-align: center;
+    border: 2px solid black;
+    margin: 5px
+}
+
+figure ul{
+    list-style: none;
 }
 
 img {
     margin: 0;
+    width: 100%;
+    height: auto;
 }
 
 nav {

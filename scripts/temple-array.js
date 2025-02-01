@@ -1,3 +1,10 @@
+const templeCards = document.querySelector('#templeCards')
+const homeLink = document.querySelector('#home')
+const oldLink = document.querySelector('#old')
+const newLink = document.querySelector('#new')
+const largeLink = document.querySelector('#large')
+const smallLink = document.querySelector('#small')
+
 const temples = [
     {
       templeName: "Aba Nigeria",
@@ -57,7 +64,7 @@ const temples = [
     },
     {
         templeName: "Albuquerque New Mexico",
-        location: "Albuquerque, New Mexico",
+        location: "Albuquerque, New Mexico, United States",
         dedicated: "1998, June, 20",
         area: 34245,
         imageUrl:
@@ -65,7 +72,7 @@ const temples = [
     },
     {
         templeName: "Salt Lake",
-        location: "Salt Lake City, Utah",
+        location: "Salt Lake City, Utah, United States",
         dedicated: "1853, Febuary, 14",
         area: 382207,
         imageUrl:
@@ -73,7 +80,7 @@ const temples = [
     },
     {
         templeName: "Farmington New Mexico",
-        location: "Farmington, New Mexico",
+        location: "Farmington, New Mexico, United States",
         dedicated: "2022, April, 30",
         area: 25000,
         imageUrl:
@@ -81,12 +88,11 @@ const temples = [
     }
 ];
 
-function ArrayCards (array){
-    let templeTemplate = ``;
+function TempleCards (array){
+    let cards = ` `;
 
-    for (let i = 0; index < array.length; i++) {
-        templeTemplate = `${array[i].templeTemplate} 
-            <figure>
+    for (let i = 0; i < array.length; i++) {
+        cards = cards + `<figure>
                 <h3>${array[i].templeName}</h3>
                 <ul>
                     <li><span>Location:</span> ${array[i].location}</li>
@@ -96,7 +102,29 @@ function ArrayCards (array){
                 <img src="${array[i].imageUrl}" alt="A picture of the ${array[i].templeName} Temple" loading="lazy">
             </figure>`
     }
-    return templeTemplate
+    return cards
 }
 
-document.querySelector('#templeCards').innerHTML = ArrayCards(temples)
+let templefilter = temples;
+
+templeCards.innerHTML = TempleCards(templefilter);
+
+largeLink.addEventListener("click", ()=>{
+    templeCards.innerHTML = TempleCards(temples.filter(temples => temples.area > 90000));
+})
+
+homeLink.addEventListener("click", ()=>{
+    templeCards.innerHTML = TempleCards(templefilter);
+})
+
+smallLink.addEventListener("click", ()=>{
+    templeCards.innerHTML = TempleCards(temples.filter(temples => temples.area < 10000));
+})
+
+newLink.addEventListener("click", ()=>{
+    templeCards.innerHTML = TempleCards(temples.filter(temples => Number(temples.dedicated.slice(0,4)) > 2000));
+})
+
+oldLink.addEventListener("click", ()=>{
+    templeCards.innerHTML = TempleCards(temples.filter(temples => Number(temples.dedicated.slice(0,4)) < 1900));
+})
