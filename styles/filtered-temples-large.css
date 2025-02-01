@@ -1,0 +1,27 @@
+@media screen and (min-width: 800px) {
+    body{
+        max-width: 100%;
+    }
+
+    header{
+        font-family: "Newsreader", serif;
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        color: white;
+        background-color: rgb(54, 54, 54);
+        height: 4rem;
+    }
+
+    .navigation{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .navigation li{
+        display: block;
+    }
+
+    #menu{
+        display:none;
+    }
+}

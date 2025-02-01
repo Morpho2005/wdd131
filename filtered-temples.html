@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Temple Album</title>
+        <meta name="description" content="Temple Album, Josef Winters, information on author">
+        <meta name="author" content="Josef Winters">
+        <link rel="stylesheet" href="styles/filtered-temples.css">
+        <link rel="stylesheet" href="styles/filtered-temples-large.css">
+        <script src="scripts/temples.js" defer></script>
+        <script src="scripts/getdates.js" defer></script>
+        <script src="scripts/temple-array.js"></script>
+    </head>
+    <body class="layout">
+        <header>
+            <section>
+                <h1>Temple Album</h1>
+                <a id="menu" href="#"></a>
+            </section>
+            <nav>
+                <ul class="navigation">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">Small</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h2>Home</h2>
+            <section id="templeCards">
+            </section>
+        </main>
+        <footer>
+            <p>©<span id="year"></span>, Josef Winters, New Mexico</p>
+            <p>last updated <span id="lastModified"></span></p>
+        </footer>
+    </body>
+</html>
