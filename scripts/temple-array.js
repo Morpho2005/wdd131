@@ -105,9 +105,7 @@ function TempleCards (array){
     return cards
 }
 
-let templefilter = temples;
-
-templeCards.innerHTML = TempleCards(templefilter);
+templeCards.innerHTML = TempleCards(temples);
 
 largeLink.addEventListener("click", ()=>{
     templeCards.innerHTML = TempleCards(temples.filter(temples => temples.area > 90000));
