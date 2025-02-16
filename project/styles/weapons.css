@@ -12,6 +12,11 @@ h1{
     font-style: normal;
 }
 
+h1 a{
+    font-style: normal;
+    text-decoration: none;
+}
+
 header{
     background-color: var(--main-color);
     color: var(--text-color);
@@ -45,4 +50,28 @@ a{
 
 footer{
     color: var(--text-color);
+    text-align: center;
+}
+
+img{
+    max-width: 90%;
+    margin: 5%
+}
+
+.weaplist{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.weaplist ul{
+    margin: 5%;
+}
+
+.weapdisplay{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.weapdisplay h2{
+    grid-column-start: span 4;
 }
